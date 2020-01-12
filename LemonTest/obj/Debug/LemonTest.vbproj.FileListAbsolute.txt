@@ -60,3 +60,9 @@ C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\obj\Debug\LemonTest.vbproj.
 C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\obj\Debug\LemonTest.dll
 C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\obj\Debug\LemonTest.xml
 C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\obj\Debug\LemonTest.pdb
+C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\bin\Newtonsoft.Json.dll
+C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\bin\System.Net.Http.Formatting.dll
+C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\bin\System.Web.Http.dll
+C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\bin\Newtonsoft.Json.xml
+C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\bin\System.Net.Http.Formatting.xml
+C:\Users\Ons Bouneb\source\repos\LemonTest\LemonTest\bin\System.Web.Http.xml
