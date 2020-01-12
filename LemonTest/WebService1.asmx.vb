@@ -23,21 +23,24 @@ Public Class WebService1
 
     <WebMethod()>
     Public Function Fibo(j As Integer) As Integer
+        If (Not (j < 0 Or j > 100)) Then
 
-        If (j < 2) Then
-            Return j
+            If (j < 2) Then
+                Return j
 
+            End If
+            Dim FibArray(900) As Integer
+            Dim i As Integer
+            FibArray(0) = 0
+            FibArray(1) = 1
+            For i = 2 To j
+                FibArray(1) = FibArray(1) + FibArray(0)
+                FibArray(0) = FibArray(1) - FibArray(0)
+            Next
+            Return FibArray(1)
+        Else
+            Return -1
         End If
-        Dim FibArray(2) As Integer
-        Dim i As Integer
-        FibArray(0) = 0
-        FibArray(1) = 1
-        For i = 2 To j
-            FibArray(1) = FibArray(1) + FibArray(0)
-            FibArray(0) = FibArray(1) - FibArray(0)
-        Next
-        Return FibArray(1)
-
     End Function
 
 
