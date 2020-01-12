@@ -7,7 +7,7 @@ Imports System.Web.Http
 <System.Web.Services.WebService(Namespace:="http://tempuri.org/")>
 <System.Web.Services.WebServiceBinding(ConformsTo:=WsiProfiles.BasicProfile1_1)>
 <ToolboxItem(False)>
-Public Class WebService1
+Public Class Fibonacci
     Inherits System.Web.Services.WebService
 
     Public Property JsonConvert As Object
@@ -41,12 +41,8 @@ Public Class WebService1
         Dim doc As XmlDocument
         doc.LoadXml("<foo>bar</foo>")
         Dim json As String
-
-
-        json = JsonConvert.SerializeXmlNode(doc)
-
-        Console.WriteLine(json)
-        Console.WriteLine("ons")
+        Dim jsonVar As Object = JsonConvert.SerializeXmlNode(doc)
+        json = jsonVar
         Return json
 
     End Function
