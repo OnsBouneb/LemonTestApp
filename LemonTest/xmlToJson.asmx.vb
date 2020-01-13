@@ -20,12 +20,17 @@ Public Class xmlToJson
         ' this function to test the xml function
         'doc.LoadXml("<foo>bar</foo>")
 
+        Try
+            doc.LoadXml(xml)
+            Dim json As String
+            Dim jsonVar As Object = JsonConvert.SerializeXmlNode(doc)
+            json = jsonVar
+            Return json
+        Catch ex As Exception
+            Return "Bad Xml format"
+        End Try
 
-        doc.LoadXml(xml)
-        Dim json As String
-        Dim jsonVar As Object = JsonConvert.SerializeXmlNode(doc)
-        json = jsonVar
-        Return json
+
 
     End Function
 
