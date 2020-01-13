@@ -16,8 +16,12 @@ Public Class xmlToJson
     Public Function XmlToJson(xml As String) As String
 
 
-        Dim doc As XmlDocument
-        doc.LoadXml("<foo>bar</foo>")
+        Dim doc As XmlDocument = New XmlDocument()
+        ' this function to test the xml function
+        'doc.LoadXml("<foo>bar</foo>")
+
+
+        doc.LoadXml(xml)
         Dim json As String
         Dim jsonVar As Object = JsonConvert.SerializeXmlNode(doc)
         json = jsonVar

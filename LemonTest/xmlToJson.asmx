@@ -1,1 +1,1 @@
-﻿<%@ WebService Language="vb" CodeBehind="xmlToJson.asmx.vb" Class="LemonTest.xmlToJson" %>
+﻿<%@ WebService Language="c#" CodeBehind="xmlToJson.asmx.vb" Class="LemonTest.xmlToJson" %>
